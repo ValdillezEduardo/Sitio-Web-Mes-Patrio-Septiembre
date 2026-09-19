@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<!-- ==========================================================
+     PÁGINA: CALENDARIO
+     Muestra el mes de septiembre en una tabla de 7 columnas (Lunes a Domingo).
+     Los miércoles y sábados se resaltan con la clase "highlight".
+     Autor: Valdillez Alamos Eduardo | 5°J | No. Control: 0903
+     ========================================================== -->
+<html lang="es">
+<head>
+    <!-- Codificación de caracteres para mostrar correctamente los acentos -->
+    <meta charset="UTF-8">
+    <!-- Título que aparece en la pestaña del navegador -->
+    <title>¡Mes Patrio! - Calendario</title>
+    <!-- Hoja de estilos externa compartida por todo el sitio -->
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <!-- ENCABEZADO: título del sitio y nombre de la sección actual -->
+    <header>
+        <h1>¡MES PATRIO!</h1>
+        <p>CALENDARIO DE SEPTIEMBRE</p>
+    </header>
+
+    <!-- MENÚ DE NAVEGACIÓN: "activo" resalta el enlace de esta página -->
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="calendario.html" class="activo">Calendario</a>
+        <a href="fechas-civicas.html">Fechas Cívicas</a>
+        <a href="personajes.html">Personajes Importantes</a>
+        <a href="fechas-internacionales.html">Fechas Internacionales</a>
+    </nav>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main>
+        <!-- Subtítulo de la sección -->
+        <h2>Calendario de Actividades</h2>
+
+        <!-- TABLA DEL CALENDARIO -->
+        <table class="calendar-table">
+            <!-- Encabezado de la tabla: los días de la semana -->
+            <thead>
+                <tr>
+                    <th>LUNES</th>
+                    <th>MARTES</th>
+                    <!-- Miércoles resaltado en rojo -->
+                    <th class="highlight">MIÉRCOLES</th>
+                    <th>JUEVES</th>
+                    <th>VIERNES</th>
+                    <!-- Sábado resaltado en rojo -->
+                    <th class="highlight">SÁBADO</th>
+                    <th>DOMINGO</th>
+                </tr>
+            </thead>
+            <!-- Cuerpo de la tabla: cada <tr> es una semana del mes -->
+            <tbody>
+                <!-- Semana 1: la clase "empty" deja la casilla vacía y transparente -->
+                <tr>
+                    <td class="empty"></td>
+                    <td>1</td>
+                    <td class="highlight">2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td class="highlight">5</td>
+                    <td>6</td>
+                </tr>
+                <!-- Semana 2 -->
+                <tr>
+                    <td>7</td>
+                    <td>8</td>
+                    <td class="highlight">9</td>
+                    <td>10</td>
+                    <td>11</td>
+                    <td class="highlight">12</td>
+                    <td>13</td>
+                </tr>
+                <!-- Semana 3: incluye el 15 y 16, fechas centrales del mes patrio -->
+                <tr>
+                    <td>14</td>
+                    <td>15</td>
+                    <td class="highlight">16</td>
+                    <td>17</td>
+                    <td>18</td>
+                    <td class="highlight">19</td>
+                    <td>20</td>
+                </tr>
+                <!-- Semana 4 -->
+                <tr>
+                    <td>21</td>
+                    <td>22</td>
+                    <td class="highlight">23</td>
+                    <td>24</td>
+                    <td>25</td>
+                    <td class="highlight">26</td>
+                    <td>27</td>
+                </tr>
+                <!-- Semana 5: el mes termina el 30, las demás casillas quedan vacías -->
+                <tr>
+                    <td>28</td>
+                    <td>29</td>
+                    <td class="highlight">30</td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+
+    <!-- PIE DE PÁGINA: datos del autor -->
+    <footer>
+        <p>VALDILLEZ ALAMOS EDUARDO | <span>5°J</span> | No. Control: <span>0903</span></p>
+    </footer>
+
+</body>
+</html>

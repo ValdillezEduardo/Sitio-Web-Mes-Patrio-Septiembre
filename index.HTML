@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!-- ==========================================================
+     PÁGINA: PORTADA (index)
+     Página de inicio del sitio "¡Mes Patrio!".
+     Muestra la cinta tricolor, el título ilustrado y la imagen central.
+     Autor: Valdillez Alamos Eduardo | 5°J | No. Control: 0903
+     ========================================================== -->
+<html lang="es">
+<head>
+    <!-- Codificación de caracteres: permite acentos y signos en español (á, é, ñ, ¡) -->
+    <meta charset="UTF-8">
+    <!-- Texto que aparece en la pestaña del navegador -->
+    <title>¡Mes Patrio! - Portada</title>
+    <!-- Enlace a la hoja de estilos externa compartida por todas las páginas -->
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <!-- ENCABEZADO: título principal del sitio y subtítulo de la sección -->
+    <header>
+        <h1>¡MES PATRIO!</h1>
+        <p>SEPTIEMBRE</p>
+    </header>
+
+    <!-- Barra de navegación actualizada con el nuevo enlace 'Calendario' -->
+    <!-- MENÚ DE NAVEGACIÓN: la clase "activo" marca la página que se está viendo -->
+    <nav>
+        <a href="index.html" class="activo">Inicio</a>
+        <a href="calendario.html">Calendario</a>
+        <a href="fechas-civicas.html">Fechas Cívicas</a>
+        <a href="personajes.html">Personajes Importantes</a>
+        <a href="fechas-internacionales.html">Fechas Internacionales</a>
+    </nav>
+
+    <!-- CONTENIDO PRINCIPAL: la clase "portada-container" centra todo en vertical -->
+    <main class="portada-container">
+        <!-- Ilustración de la Cinta Tricolor -->
+        <!-- Imagen decorativa superior; el atributo alt describe la imagen -->
+        <div class="banner-cinta">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJgj4TRZDLH8LkxXLdOA-oGc2wTHcVFYldJWFi04cXUg&s=10" alt="Moño Tricolor Patrio">
+        </div>
+
+        <!-- Título Ilustrado estilo ¡Viva México! -->
+        <!-- Título grande con sombra tricolor definida en estilos.css -->
+        <div class="viva-mexico-title">
+            <h2>¡SEPTIEMBRE!</h2>
+        </div>
+
+        <!-- Ilustración Central (Cactus Festivo con Sombrero y Maracas) -->
+        <!-- Imagen principal de la portada; tiene efecto de zoom al pasar el mouse -->
+        <div class="hero-image">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvx7-FUbT4cUng6IYDXhHztlkR_DpbeBu57cMZCywR7g&s=10">
+        </div>
+    </main>
+
+    <!-- PIE DE PÁGINA: datos del autor; los <span> se resaltan en amarillo por CSS -->
+    <footer>
+        <p>VALDILLEZ ALAMOS EDUARDO | <span>5°J</span> | No. Control: <span>0903</span></p>
+    </footer>
+
+</body>
+</html>
